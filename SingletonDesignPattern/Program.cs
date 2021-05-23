@@ -2,7 +2,7 @@
 
 namespace SingletonDesignPattern
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -12,18 +12,6 @@ namespace SingletonDesignPattern
             string result = singleton1.Equals(singleton2) ? "equals" : "not equals";
 
             Console.WriteLine(result);
-        }
-    }
-
-    class Singleton
-    {
-        private static Singleton _singleton;
-
-        private Singleton() { }
-
-        public static Singleton GetSingleton()
-        {
-            return _singleton == null ? _singleton = new Singleton() : _singleton;
         }
     }
 }
